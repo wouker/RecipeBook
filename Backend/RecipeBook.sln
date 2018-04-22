@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBook.api", "RecipeBook.api\RecipeBook.api.csproj", "{CC0EBC7A-9E16-45EA-A3EB-F0F9B1F51345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeBook.Api", "RecipeBook.Api\RecipeBook.Api.csproj", "{CC0EBC7A-9E16-45EA-A3EB-F0F9B1F51345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeBook.tests", "RecipeBook.tests\RecipeBook.tests.csproj", "{E4437F7D-4D75-4525-A5E3-5AE52F290329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeBook.UnitTests", "RecipeBook.UnitTests\RecipeBook.UnitTests.csproj", "{E4437F7D-4D75-4525-A5E3-5AE52F290329}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeBook.IntegrationTests", "RecipeBook.IntegrationTests\RecipeBook.IntegrationTests.csproj", "{185622A4-8400-4EA5-B65C-7F075AAEE4F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Testing", "10 Testing", "{A3B49C7F-7481-4A39-85D9-AC95F8CE1C64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Logic", "01 Logic", "{BD4021CA-4AE6-4DE7-A987-E77B65F6FEE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeBook.Testing.Common", "RecipeBook.Testing.Common\RecipeBook.Testing.Common.csproj", "{29FD810B-A2C1-4EC7-B64C-0659B5D53205}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,23 @@ Global
 		{E4437F7D-4D75-4525-A5E3-5AE52F290329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4437F7D-4D75-4525-A5E3-5AE52F290329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4437F7D-4D75-4525-A5E3-5AE52F290329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185622A4-8400-4EA5-B65C-7F075AAEE4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185622A4-8400-4EA5-B65C-7F075AAEE4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185622A4-8400-4EA5-B65C-7F075AAEE4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185622A4-8400-4EA5-B65C-7F075AAEE4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FD810B-A2C1-4EC7-B64C-0659B5D53205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FD810B-A2C1-4EC7-B64C-0659B5D53205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FD810B-A2C1-4EC7-B64C-0659B5D53205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FD810B-A2C1-4EC7-B64C-0659B5D53205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC0EBC7A-9E16-45EA-A3EB-F0F9B1F51345} = {BD4021CA-4AE6-4DE7-A987-E77B65F6FEE8}
+		{E4437F7D-4D75-4525-A5E3-5AE52F290329} = {A3B49C7F-7481-4A39-85D9-AC95F8CE1C64}
+		{185622A4-8400-4EA5-B65C-7F075AAEE4F9} = {A3B49C7F-7481-4A39-85D9-AC95F8CE1C64}
+		{29FD810B-A2C1-4EC7-B64C-0659B5D53205} = {A3B49C7F-7481-4A39-85D9-AC95F8CE1C64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {485FFE9C-154D-458F-947D-811CE34E82CF}

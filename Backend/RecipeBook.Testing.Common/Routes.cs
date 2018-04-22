@@ -1,17 +1,12 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-
-namespace RecipeBook.Api.Controllers
+﻿namespace RecipeBook.Testing.Common
 {
-    [Route("api/[controller]")]
-    public class RecipesController : Controller
+    internal static class Routes
     {
-        // GET api/recipes
-        [HttpGet]
-        public IEnumerable<string> GetAll()
+        internal static class Recipes
         {
-            return new string[] { "value1", "value2" };
+            public static string GetAll = "api/recipes";
         }
+        /* 
 
         // GET api/recipes/5
         [HttpGet("{id}")]
@@ -33,9 +28,6 @@ namespace RecipeBook.Api.Controllers
         }
 
         // DELETE api/recipes/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        [HttpDelete("{id}")]*/
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace RecipeBook.tests
+namespace RecipeBook.IntegrationTests
 {
     public class RecipeControllerIntegrationTests
     {
